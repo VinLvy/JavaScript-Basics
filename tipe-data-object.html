@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        const person = {
+            "full name": "messi",
+            age: "36",
+            skill: "dribble"
+        }
+
+        // ubah / tambah
+        // person["name"] = "messi"
+        // person["age"] = 30
+        // person["skill"] = "OfA"
+        console.table(person)
+
+        console.info(`nama: ${person["full name"]}`)
+        console.info(`age: ${person.age}`)
+        console.info(`skill: ${person.skill}`)
+
+        delete person["skill"]
+        console.table(person)
+    </script>
+</body>
+</html>
