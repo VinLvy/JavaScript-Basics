@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String template</title>
+</head>
+<body>
+    <script>
+        const name = "leo messi"
+        const firstName = "Lionel"
+        const lastName = "Messi"
+
+        const template = `name = ${firstName} ${lastName}`
+        const lama = "name = " + firstName + " " + lastName 
+        console.info(template)
+
+        const nilai = 70
+        const template2 = `name = ${name}, Lulus =  ${nilai > 80}`
+        console.info(template2)
+
+        const multiline = `
+    Antony
+    Leo Messi
+    barca`
+
+
+        document.writeln("<pre>")
+        document.writeln(multiline)
+        document.writeln("<pre>")
+    </script>
+</body>
+</html>
