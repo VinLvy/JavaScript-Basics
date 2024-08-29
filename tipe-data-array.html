@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        let arrayKosong = []
+        let arrayNama = ["1", "luvvy", "messi"]
+
+        const names = []
+        names.push("ios")
+        names.push("9", "lewa")
+        names.push("ez", "10")
+        console.table(names)
+
+        console.info(names[0])
+        names[0] = ("android")
+        console.table(names)
+
+        delete names[4]
+        console.table(names)
+
+        names.push(1,2,3)
+        names.push([4,5,6])
+        console.table(names)
+    </script>
+</body>
+</html>
