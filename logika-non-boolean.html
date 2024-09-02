@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non binary Logic</title>
+</head>
+<body>
+    <script>
+        console.info("Hello" || "") //hello
+        console.info("" || []) // []
+        console.info("0" || "NOL") // 0
+        console.info(0 || "NOL") // NOL
+        console.info(null || "Null") // Null
+        console.info(undefined || "UNDEFINED") // UNDEFINED
+        console.info(0 || false) // 0
+
+        const person = {
+            firstName: "Leo",
+            lastName: "Messi"
+        }
+
+        const name = person.firstName ?? person.lastName
+        console.info(name)
+
+        console.info("Hello" && '') //''
+        console.info("" && []) //""
+        console.info("0" && "NOL") //"NOL"
+        console.info(0 && "NOL") // 0
+        console.info(null && "Null") // null
+        console.info(undefined && "UNDEFINED") //undefined
+        console.info("undefined" && "null") // null
+    </script>
+</body>
+</html>
