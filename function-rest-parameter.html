@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F R P</title>
+</head>
+<body>
+    <script>
+        function sum(name, ...data){
+            let total = 0
+            for(const item of data){
+                total += item
+            }
+            document.writeln(`<p>Total ${name} is ${total}</p>`)
+        }
+        sum("Ball", 9,7,5,3,1)
+        sum("Egg", 10,40,70,90,50)
+
+        const values = [10,10,10,10]
+        sum("Test", ...values)
+    </script>
+</body>
+</html>
