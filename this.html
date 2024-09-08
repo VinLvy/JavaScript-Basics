@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This</title>
+</head>
+<body>
+    <script>
+        console.info(this) //window
+
+        function sample(){
+            console.info(this)
+
+            function inner(){
+                console.info(this)
+            }
+            inner()
+        }
+        sample()
+
+        const person = {
+            name: "luvvy",
+            sayHello: function (value){
+                console.info(`hi ${value} hola ${this.name}`)
+                // person
+            }
+        }
+
+        person.sayHello("m")
+        person.sayHello("Rem")
+    </script>
+</body>
+</html>
